@@ -1,0 +1,9 @@
+As an user I need to:
+
+- Immediately recognize the purpose of the web page.
+- Easily access key information about the festival, such as locations and events.
+- Be able to sign up as a member.
+
+As a member I need to:
+
+- Have a list of all events and locations so I can plan my business accordingly.
