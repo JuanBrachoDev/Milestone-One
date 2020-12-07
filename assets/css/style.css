@@ -12,13 +12,56 @@
 }
 */
 
-/*--------------------------------Header */
+/*--------------------------------Margins */
 
-.container-fluid{
-    padding:0;
-    margin: 0;
+section{
+    margin-top: 20px;
 }
 
+footer{
+    margin-top:20px;
+}
+
+h2{
+    margin-top:15px;
+}
+
+/*--------------------------------Colors */
+
+body{
+    background-color: #eaeff0;
+}
+
+header{
+    background-color: #06273c;
+    color: #fff;
+}
+
+#locations-dates{
+    background-color: #d6dee1;
+    background-color: #7092a3;
+    background-color: #a2bdc7;
+}
+
+#footer{
+    background-color: #06273c;
+    color: #fff;
+}
+
+/*--------------------------------Header */
+
+nav{
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* Will help alongside media queries to show the burger button on small devices, and the button menu on larger ones */
+#burger-menu{
+        display:none;
+    }
+
+/* Removes the default arrow for dropdowns in bootstrap */
 .dropdown-toggle::after {
     content: none;
 }
@@ -29,9 +72,55 @@
 .responsive-image img{
     max-width: 100%;
     max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
 
+/*--------------------------------Scrolling Image */
 
+.container-fluid{
+    padding:0;
+    margin: 0;
+}
+
+.slideshow {
+    width:100%; 
+    height:0px; 
+    padding-bottom: 50%; 
+    overflow:hidden; 
+    position:relative; 
+}
+
+.slideshow img{ 
+    position:absolute; 
+    animation:fling-minislide 20s infinite; 
+    opacity:0; 
+    width: 100%;
+    height: auto;
+}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.slideshow img:nth-child(4){animation-delay:0s;}
+.slideshow img:nth-child(3){animation-delay:5s;}
+.slideshow img:nth-child(2){animation-delay:10s;}
+.slideshow img:nth-child(1){animation-delay:15s;}
+
+/*--------------------------------Home */
+
+#home p{
+    text-align: justify;
+}
+
+/*--------------------------------Titles */
+
+h2{
+    text-align: center;
+}
+
+h3{ 
+    text-align: center;
+}
 
 /*--------------------------------Footer */
 
@@ -49,18 +138,33 @@
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+}
 
 /*--------------------------------Google Maps */
 
-.map-container{
-overflow:hidden;
-position:relative;
-padding-bottom: 20px;
+.maps{
+    overflow:hidden;
+    position:relative;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.map-container iframe{
-height:auto;
-width:auto;
+.maps iframe{
+    height:auto;
+    width:auto;
 }
 
+/*--------------------------------Media queries */
+
+@media screen and (max-width: 690px) {
+    #button-menu{
+        display:none;
+    }
+
+    #burger-menu{
+        display:block;
+    }
+}
 

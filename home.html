@@ -12,16 +12,16 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row align-items-center">
                 <!--<div id="logo" class="col-4"></div>-->
-                <h1 class="col-6">The Adventure Begins</h1>
-                <nav class="col-6">
+                <h1 class="col">The Adventure Begins</h1>
+                <nav class="col">
                     <div id="button-menu" class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary" target>Home</button>
+                        <button type="button" class="btn btn-secondary" >Home</button>
                         <button type="button" class="btn btn-secondary">Locations & Dates</button>
                         <button type="button" class="btn btn-secondary">Events</button>
-                        <button type="button" class="btn btn-secondary">Contact us</button>
+                        <button type="button" class="btn btn-secondary" target="footer">Contact us</button>
                     </div>
                     <div id="burger-menu" class="btn-group" role="group">
                         <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,9 +39,14 @@
         </div>   
     </header>
     <section class="container-fluid">
-        <div class="row responsive-image">
-            <img src="assets/images/mug.jpeg" alt="mug filled with snow">
-
+        <div class="row">
+            <div class="col-12 slideshow">
+                <img src="assets/images/mug.jpeg" alt="mug filled with snow">
+                <img src="assets/images/winter-fun.jpeg" alt="family sitting on snow">
+                <img src="assets/images/parade.jpeg" alt="street parade">
+                <img src="assets/images/costumes.jpeg" alt="girls in costumes">
+            </div>
+            
         </div>
     </section>
     <section id="home" class="container">
@@ -49,48 +54,50 @@
             <h2 class="col">Who are we?</h2>
         </div>
         <div class="row">
-            <p class="col">-Who are we content-</p>
+            <p>We are pleased to announce the 10th The Adventure Begins Winter Festival, brought to you by the expert hands of our dedicated team to bring entertainment and joy to everyone in Dublin.</p>
+            <p>Fit for all ages, this event is sure to bring you a warm smile in this chilly season, whether you are in to enjoy the fun activities we have prepared, or would rather join our team of organizers.</p>
+            <p>We look forward to seeing you in any of the locations!</p>
         </div>
         <div class="row responsive-image">
             <img src="assets/images/team.jpeg" alt="work team celebrating">
         </div>
         <div class="row">
-            <h2>Join us!</h2>
+            <h2 class="col">Join us!</h2>
+        </div>
+        <div class="row">      
+            <ul id="benefits">
+                <li class="col-4">Benefit 1</li>
+                <li class="col-4">Benefit 2</li>
+                <li class="col-4">Benefit 3</li>
+            </ul>   
         </div>
         <div class="row">
-            <div class="col-6">
-                <ul>
-                    <li>Benefit 1</li>
-                    <li>Benefit 2</li>
-                    <li>Benefit 3</li>
-                </ul>
-            </div>
-            <div class="col-6">Button</div>
+            <div class="col-12">Button</div>
         </div>
     </section> 
     <section id="locations-dates" class="container">
         <div class="row">
-            <h2>Locations & Dates</h2>
+            <h2 class="col">Locations & Dates</h2>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <h3>Location & Date 1</h3>
                 <p>Address</p>
-                <div class="z-depth-1-half map-container">
+                <div class="maps">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.778371160285!2d-6.322663584026437!3d53.23974909039131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670a93fc96f85b%3A0xef1e1af6a70f5799!2sDublin%20Panoramic%20View%2FDublin%20View%20Point!5e0!3m2!1sen!2sie!4v1607239290142!5m2!1sen!2sie" frameborder="0" allowfullscreen="" aria-hidden="false"></iframe>
                 </div>
             </div>
             <div class="col-md-4">
                 <h3>Location & Date 2</h3>
                 <p>Address</p>
-                <div class="z-depth-1-half map-container">
+                <div class="maps">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.778371160285!2d-6.322663584026437!3d53.23974909039131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670a93fc96f85b%3A0xef1e1af6a70f5799!2sDublin%20Panoramic%20View%2FDublin%20View%20Point!5e0!3m2!1sen!2sie!4v1607239290142!5m2!1sen!2sie" frameborder="0" allowfullscreen="" aria-hidden="false"></iframe>
                 </div>
             </div>
             <div class="col-md-4">
                 <h3>Location & Date 3</h3>
                 <p>Address</p>
-                <div class="z-depth-1-half map-container">
+                <div class="maps">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.778371160285!2d-6.322663584026437!3d53.23974909039131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670a93fc96f85b%3A0xef1e1af6a70f5799!2sDublin%20Panoramic%20View%2FDublin%20View%20Point!5e0!3m2!1sen!2sie!4v1607239290142!5m2!1sen!2sie" frameborder="0" allowfullscreen="" aria-hidden="false"></iframe>
                 </div>
             </div>
@@ -98,7 +105,7 @@
     </section>  
     <section id="events" class="container">
         <div class="row">
-            <h2>Events</h2>
+            <h2 class="col">Events</h2>
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -125,7 +132,9 @@
         </div>
     </section>  
     <footer id="footer" class="container">
-            <h5 class="row">Social</h5>
+            <div class="row">
+                <h2 class="col">Social</h2>
+            </div>
             <div class="row">
                 <ul class="col-md-6 list-inline social-links">
                     <li class="list-inline-item">
