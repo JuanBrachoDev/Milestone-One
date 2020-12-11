@@ -18,8 +18,9 @@ section{
     margin-top: 20px;
 }
 
-footer{
-    margin-top:20px;
+.container-fluid{
+    padding: 0;
+    margin: 20px 0;
 }
 
 h2{
@@ -50,10 +51,23 @@ header{
 
 /*--------------------------------Header */
 
+header .row{
+    height: 50px;
+}
+
+header h1{
+    height:inherit;
+    font-size: 3vw;
+}
+
 nav{
     float: right;
     text-align: right;
     margin-right: 20px;
+}
+
+#drop-menu{
+    background-color: #fff;
 }
 
 /* Will help alongside media queries to show the burger button on small devices, and the button menu on larger ones */
@@ -78,11 +92,6 @@ nav{
 }
 
 /*--------------------------------Scrolling Image */
-
-.container-fluid{
-    padding:0;
-    margin: 0;
-}
 
 .slideshow {
     width:100%; 
@@ -112,6 +121,14 @@ nav{
     text-align: justify;
 }
 
+#benefits li{
+    display: inline;
+}
+
+#join-us button{
+    width: inherit;
+}
+
 /*--------------------------------Titles */
 
 h2{
@@ -120,6 +137,25 @@ h2{
 
 h3{ 
     text-align: center;
+    padding: 20px 0px;
+}
+
+/*--------------------------------Locations & Dates */
+
+#locations-dates{
+    border-radius: 15px;
+    background: #a2bdc7;
+    padding: 20px;
+}
+
+#locations-dates p{
+    text-align: center;
+}
+
+.single-location{
+    border-radius: 15px;
+    background: #eaeff0;
+    padding: 20px;
 }
 
 /*--------------------------------Footer */
@@ -158,7 +194,7 @@ h3{
 
 /*--------------------------------Media queries */
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 992px) {
     #button-menu{
         display:none;
     }
@@ -168,3 +204,10 @@ h3{
     }
 }
 
+@media screen and (min-width: 930px) {
+    
+
+    .single-event img{
+        float:left;
+    }
+}
