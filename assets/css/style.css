@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto: 100, 200, 300, 400, 500, 600, 700 |Exo: 100, 200, 300, 400, 500, 600, 700');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 /*#logo{
     background: url("../images/logo.png");
@@ -51,13 +51,14 @@ header{
 
 /*--------------------------------Header */
 
-header .row{
-    height: 50px;
+header{
+    height: 60px;
+    box-shadow: 0px 2px grey;
 }
 
 header h1{
-    height:inherit;
-    font-size: 3vw;
+    font-family: 'Dancing Script', cursive;
+    font-stretch: ultra-condensed;
 }
 
 nav{
@@ -82,7 +83,7 @@ nav{
 
 /*--------------------------------Images */
 
-
+/* This helps images stretch to the size of the container and makes them responsive */
 .responsive-image img{
     max-width: 100%;
     max-height: 100%;
@@ -93,6 +94,11 @@ nav{
 
 /*--------------------------------Scrolling Image */
 
+#scrolling-images{
+    margin-top: 60px;
+}    
+
+/* This section allows the images to cycle automatically */
 .slideshow {
     width:100%; 
     height:0px; 
@@ -153,9 +159,27 @@ h3{
 }
 
 .single-location{
-    border-radius: 15px;
-    background: #eaeff0;
-    padding: 20px;
+    border-right: 1px solid #eaeff0;
+    padding: 0px 30px 0px 30px;
+}
+
+.single-location div{
+    padding-bottom: 20px;
+}
+
+#last-location{
+    border-right: none;
+}
+
+/*--------------------------------Events */
+
+.single-event{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #06273c;
+}
+
+#last-event{
+    border-bottom: none;
 }
 
 /*--------------------------------Footer */
@@ -178,13 +202,13 @@ h3{
 
 /*--------------------------------Google Maps */
 
+/* Makes maps' responsive and centered within their container */
 .maps{
-    overflow:hidden;
-    position:relative;
-    padding-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow:hidden;
+    position:relative;
 }
 
 .maps iframe{
@@ -194,6 +218,7 @@ h3{
 
 /*--------------------------------Media queries */
 
+/* Allows the burger menu to only appear on smaller devices, and only shows the button menu on larger ones */
 @media screen and (max-width: 992px) {
     #button-menu{
         display:none;
@@ -202,11 +227,21 @@ h3{
     #burger-menu{
         display:block;
     }
+
+    .single-location{
+        border-right: none;
+    }
+
+    .single-location div{
+        border-bottom: 1px solid #eaeff0;
+    }
+
+    #last-location div{
+        border-bottom: none;
+    }
 }
 
-@media screen and (min-width: 930px) {
-    
-
+@media screen and (min-width: 930px) { 
     .single-event img{
         float:left;
     }
