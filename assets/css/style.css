@@ -35,7 +35,7 @@ body{
 
 header{
     background-color: #06273c;
-    color: #fff;
+    color: #d6dee1;
 }
 
 #locations-dates{
@@ -52,33 +52,57 @@ header{
 /*--------------------------------Header */
 
 header{
-    height: 60px;
     box-shadow: 0px 2px grey;
+    background-color: #06273c;
+    color: #d6dee1;
 }
 
 header h1{
     font-family: 'Dancing Script', cursive;
     font-stretch: ultra-condensed;
+    margin: 0px;
+    color: #d6dee1;
 }
 
 nav{
-    float: right;
-    text-align: right;
-    margin-right: 20px;
+    margin: 0 20px;
+    padding: 0px;
 }
 
-#drop-menu{
-    background-color: #fff;
+nav li{
+    list-style-type: none;
+}
+
+.btn-group button{
+    background-color: transparent;
+    border:2px solid #d6dee1;
+}
+
+.btn-group a{
+    color: #d6dee1;
+}
+
+#burger-menu i{
+    color: #d6dee1;
+}
+
+.dropdown-item{
+    color: #d6dee1;
+    text-align: center;
 }
 
 /* Will help alongside media queries to show the burger button on small devices, and the button menu on larger ones */
 #burger-menu{
         display:none;
+        text-align: right;
     }
 
-/* Removes the default arrow for dropdowns in bootstrap */
-.dropdown-toggle::after {
-    content: none;
+#burger-menu button:focus{
+        outline: none;
+    }
+
+.navbar-toggler{
+    line-height: 0;
 }
 
 /*--------------------------------Images */
@@ -95,7 +119,7 @@ nav{
 /*--------------------------------Scrolling Image */
 
 #scrolling-images{
-    margin-top: 60px;
+    margin-top: 56px;
 }    
 
 /* This section allows the images to cycle automatically */
@@ -198,6 +222,24 @@ h3{
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+}
+
+/*-------------------------------- Member Modal */
+
+.modal-header i{
+    color: #d6dee1;
+}
+
+.modal-content{
+    background-color: #06273c;
+    color: #d6dee1;
+    border: 3px solid #d6dee1;
+    border-radius: 1rem;
+}
+
+.modal-footer button{
+    background-color: #d6dee1;
+    color: #06273c;
 }
 
 /*--------------------------------Google Maps */
