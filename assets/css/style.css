@@ -1,4 +1,7 @@
+/*--------------------------------Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script:wght@400;700&display=swap');
+
+/*--------------------------------Whole Page */
 
 html{
     scroll-behavior: smooth;
@@ -8,7 +11,7 @@ body{
     font-family: 'Comfortaa', cursive;
 }
 
-/*--------------------------------Margins */
+/*--------------------------------General Margins */
 
 section{
     margin-top: 20px;
@@ -45,6 +48,50 @@ header{
     color: #fff;
 }
 
+/*--------------------------------Titles */
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+h2, h3{
+    text-align: center;    
+}
+
+h3{ 
+    padding: 20px 0px;
+}
+
+/*--------------------------------Images */
+
+/* This helps images stretch to the size of the container and makes them responsive */
+.responsive-image img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+/*--------------------------------Google Maps */
+
+/* Makes maps' responsive and centered within their container */
+.maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    position:relative;
+}
+
+.maps iframe{
+    height:auto;
+    width:auto;
+    border: none;
+}
+
 /*--------------------------------Header */
 
 header{
@@ -68,13 +115,15 @@ nav li{
     list-style-type: none;
 }
 
+#button-menu a{
+    background-color: transparent;
+    border:2px solid #d6dee1;
+    color: #d6dee1;
+}
+
 .btn-group button{
     background-color: transparent;
     border:2px solid #d6dee1;
-}
-
-.btn-group a{
-    color: #d6dee1;
 }
 
 #burger-menu i{
@@ -101,17 +150,6 @@ nav li{
 
 .navbar-toggler{
     line-height: 0;
-}
-
-/*--------------------------------Images */
-
-/* This helps images stretch to the size of the container and makes them responsive */
-.responsive-image img{
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
 }
 
 /*--------------------------------Scrolling Image */
@@ -157,22 +195,6 @@ nav li{
 
 #join-us button{
     width: inherit;
-}
-
-/*--------------------------------Titles */
-
-h2{
-    font-family: 'Dancing Script', cursive;
-    font-weight: 700;
-    font-size: 45px;
-}
-
-h2, h3{
-    text-align: center;    
-}
-
-h3{ 
-    padding: 20px 0px;
 }
 
 /*--------------------------------Locations & Dates */
@@ -265,22 +287,6 @@ footer p{
 .modal-footer button{
     background-color: #d6dee1;
     color: #06273c;
-}
-
-/*--------------------------------Google Maps */
-
-/* Makes maps' responsive and centered within their container */
-.maps{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow:hidden;
-    position:relative;
-}
-
-.maps iframe{
-    height:auto;
-    width:auto;
 }
 
 /*--------------------------------Media queries */
