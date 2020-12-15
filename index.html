@@ -21,17 +21,17 @@
                     <h1 class="navbar-brand">The Adventure Begins</h1>
                 </a>
                 <!-- Nav Buttons -->
-                <div class="">
+                <div>
                     <!-- Button Menu -->
                     <div id="button-menu" class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary" data-target="#events" >
+                        <button type="button" class="btn btn-secondary" data-target="#activities" >
                             <a href="#home">Home</a>
                         </button>
                         <button type="button" class="btn btn-secondary">
                             <a href="#locations-dates">Locations & Dates</a>
                         </button>
                         <button type="button" class="btn btn-secondary">
-                            <a href="#events">Activities</a>
+                            <a href="#activities">Activities</a>
                         </button>
                         <button type="button" class="btn btn-secondary">
                             <a href="#footer">Contact Us</a>
@@ -39,21 +39,24 @@
                     </div>
                     <!-- Burger Menu -->
                     <div id="burger-menu" class="btn-group" role="group">
-                        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#drop-menu" aria-haspopup="true" aria-expanded="false">
+                        <!--<a class="d-flex" href="#">
+                            <h1 class="navbar-brand">The Adventure Begins</h1>
+                        </a>-->
+                        <button type="button" class="navbar-toggler-right collapsed" data-toggle="collapse" data-target="#drop-menu" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-bars" aria-hidden="true"></i>
                         </button>
                         <div id="drop-menu" role="menu" class="collapse navbar-collapse" aria-labelledby="drop-menu">
-                            <ul>
-                                <li data-toggle="collapse" data-target="#drop-menu" class="nav-item">
+                            <ul class="row">
+                                <li data-toggle="collapse" data-target="#drop-menu" class="nav-item col-12">
                                     <a class="dropdown-item" href="#home">Home</a>
                                 </li>
-                                <li data-toggle="collapse" data-target="#drop-menu" class="nav-item">
+                                <li data-toggle="collapse" data-target="#drop-menu" class="nav-item col-12">
                                     <a class="dropdown-item" href="#locations-dates">Locations & Dates</a>
                                 </li>
-                                <li data-toggle="collapse" data-target="#drop-menu" class="nav-item">
-                                    <a class="dropdown-item" href="#events">Activities</a>
+                                <li data-toggle="collapse" data-target="#drop-menu" class="nav-item col-12">
+                                    <a class="dropdown-item" href="#activities">Activities</a>
                                 </li>
-                                <li data-toggle="collapse" data-target="#drop-menu" class="nav-item">
+                                <li data-toggle="collapse" data-target="#drop-menu" class="nav-item col-12">
                                     <a class="dropdown-item" href="#footer">Contact Us</a>
                                 </li>
                             </ul>    
@@ -78,26 +81,32 @@
     <section id="home" class="container">
         <!-- Introduction -->
         <div class="row">
-            <h2 class="col">Who are we?</h2>
+            <h2 class="col">- Who are we? -</h2>
         </div>
         <div class="row">
-            <p>We are pleased to announce the 10th The Adventure Begins Winter Festival, brought to you by the expert hands of our dedicated team to bring entertainment and joy to everyone in Dublin.</p>
-            <p>Fit for all ages, this event is sure to bring you a warm smile in this chilly season, whether you are in to enjoy the fun activities we have prepared, or would rather join our team of organizers.</p>
-            <p>We look forward to seeing you in any of the locations!</p>
+            <p class="col-12">We are pleased to announce the 10th The Adventure Begins Winter Festival, brought to you by the expert hands of our dedicated team to bring entertainment and joy to everyone in Dublin.</p>
+            <p class="col-12">Fit for all ages, this event is sure to bring you a warm smile in this chilly season, whether you are in to enjoy the fun activities we have prepared, or would rather join our team of organizers.</p>
+            <p class="col-12">We look forward to seeing you in any of the locations!</p>
         </div>
         <div class="row responsive-image">
-            <img src="assets/images/festival.jpeg" alt="festival at night">
+            <div class="col-12">
+                <img src="assets/images/festival.jpeg" alt="festival at night">
+            </div>
         </div>
         <!-- Join Us Banner -->
         <div class="row">
-            <h2 class="col">Join us!</h2>
+            <h2 class="col">- Join us! -</h2>
         </div>
-        <div class="row">      
-            <ul id="benefits">
-                <li class="col-4">Get a stand spot in all days of our festival, sell your merchandise!</li>
-                <li class="col-4">Guaranteed parking spot just next to the event.</li>
-                <li class="col-4">Promotion for your brand(s) in our social media accounts.</li>
-            </ul>   
+        <div id="benefits" class="row justify-content-center">
+            <div class="col-12 col-lg-4">     
+                <p>Guaranteed parking for all days of the festival.</p>
+            </div> 
+            <div class="col-12 col-lg-4"> 
+                <p>Sell your merchandise. Promote your brand.</p>
+            </div> 
+            <div class="col-12 col-lg-4"> 
+                <p> Priority access to activities for a group of (4). </p>
+            </div> 
         </div>
         <div class="row">
             <div class="col-12" id="join-us">
@@ -110,7 +119,7 @@
     <!-- Locations & Dates Section -->
     <section id="locations-dates" class="container">
         <div class="row">
-            <h2 class="col">Locations & Dates</h2>
+            <h2 class="col">- Locations & Dates -</h2>
         </div>
         <div class="row">
             <!-- 1st Location -->
@@ -140,12 +149,12 @@
         </div>
     </section>  
     <!-- Activities Section -->
-    <section id="events" class="container">
+    <section id="activities" class="container">
         <div class="row">
-            <h2 class="col">Activities</h2>
+            <h2 class="col">- Activities -</h2>
         </div>
         <!-- Aurora Borealis Activity -->
-        <div class="single-event">
+        <div class="single-activity">
             <div class="row justify-content-center">
                 <h3>Aurora Borealis Sightseeing</h3>
             </div>
@@ -163,7 +172,7 @@
             </div>
         </div>
         <!-- Ice Skating Activity -->
-        <div class="single-event">
+        <div class="single-activity">
             <div class="row justify-content-center">
                 <h3>Ice Skating Ballet</h3>
             </div>
@@ -180,7 +189,7 @@
             </div>
         </div>
         <!-- Food Faire Activity -->
-        <div class="single-event" id="last-event">
+        <div class="single-activity" id="last-activity">
             <div class="row justify-content-center">
                 <h3>Food Faire</h3>
             </div>
@@ -200,36 +209,48 @@
     <!-- Contact Us -->
     <footer id="footer" class="container-fluid">
             <div class="row">
-                <h2 class="col">Social</h2>
-            </div>
-            <!-- Social Media Icons -->
-            <div class="row align-self-center">
-                <ul class="col list-inline social-links">
-                    <li class="list-inline-item">
-                        <a href="https://www.facebook.com/" target="_blank">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.twitter.com/" target="_blank">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
-                        </a>
-                    </li>
-                </ul>
-                <!-- Telephone Number -->
-                <div class="col align-self-center">
-                    <i class="fa fa-phone-square-alt" aria-hidden="true"></i>
-                    <p>+35301010101</p>
+                <!-- Copyright -->
+                <div class="col-12 col-lg-4">
+                    <h3>Copyright</h3>
+                    <p>Copyright © 2020 Juan Bracho. All rights reserved.</p>
+                </div>
+                <!-- Social Media Icons -->
+                <div class="col-12 col-lg-4">
+                    <h3>Contact Us</h3>
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Telephone Number -->
+                    <div id="telephone-num" >
+                        <p><i class="fa fa-phone-square" aria-hidden="true"></i> +35301010101</p>
+                    </div>
+                </div>
+                <!-- Commitment -->
+                <div class="col-12 col-lg-4">
+                    <h3>Commitment</h3>
+                    <p>The Adventure Begins team is commited to protect and clean all of its locations, to ensure no pollution derives from human enjoyment and to preserve nature wonders all around the world.</p>
                 </div>
             </div>
+                
+                
+            
     </footer>
     <!-- Member Modal -->
     <div class="modal fade" id="member-modal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">

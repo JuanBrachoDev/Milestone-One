@@ -1,16 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script:wght@400;700&display=swap');
 
-/*#logo{
-    background: url("../images/logo.png");
-    float: left;
-    margin: 2.5% 0 0 2.5%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100px;
-    min-width: 200px;
-    padding: 0;
+html{
+    scroll-behavior: smooth;
 }
-*/
+
+body{
+    font-family: 'Comfortaa', cursive;
+}
 
 /*--------------------------------Margins */
 
@@ -59,7 +55,6 @@ header{
 
 header h1{
     font-family: 'Dancing Script', cursive;
-    font-stretch: ultra-condensed;
     margin: 0px;
     color: #d6dee1;
 }
@@ -93,13 +88,16 @@ nav li{
 
 /* Will help alongside media queries to show the burger button on small devices, and the button menu on larger ones */
 #burger-menu{
-        display:none;
-        text-align: right;
-    }
+    display:none;
+    text-align: right;
+    padding: 0px;
+    
+}
 
 #burger-menu button:focus{
-        outline: none;
-    }
+    outline: none;
+
+}
 
 .navbar-toggler{
     line-height: 0;
@@ -151,8 +149,10 @@ nav li{
     text-align: justify;
 }
 
-#benefits li{
-    display: inline;
+#benefits p{
+    text-align: center;
+    border: 5px solid #06273c;
+    border-radius: 1rem;
 }
 
 #join-us button{
@@ -162,11 +162,16 @@ nav li{
 /*--------------------------------Titles */
 
 h2{
-    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+h2, h3{
+    text-align: center;    
 }
 
 h3{ 
-    text-align: center;
     padding: 20px 0px;
 }
 
@@ -195,33 +200,53 @@ h3{
     border-right: none;
 }
 
-/*--------------------------------Events */
+/*--------------------------------Activities */
 
-.single-event{
+.single-activity{
     padding-bottom: 20px;
     border-bottom: 1px solid #06273c;
 }
 
-#last-event{
+#last-activity{
     border-bottom: none;
 }
 
 /*--------------------------------Footer */
 
-.social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
+#footer h2{
+    margin-bottom: 30px;
+}
+
+#footer div{
     text-align: center;
+}
+
+.social-links li{
+    height: 55px;
+    width: 55px;
+    border: 2px solid #eaeff0;
+    border-radius: 50%;
+}
+
+.social-links i{
+    width: 25px;
+    height: 25px;
+    padding: 13px 0px;
+    font-size: 25px;
     color: #fafafa;
-    background: #8f8f8f;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+}
+
+footer p{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#telephone-num p{
+    font-size: 25px;
 }
 
 /*-------------------------------- Member Modal */
@@ -281,10 +306,9 @@ h3{
     #last-location div{
         border-bottom: none;
     }
-}
 
-@media screen and (min-width: 930px) { 
-    .single-event img{
-        float:left;
+    #benefits-section label{
+        font-size: 50%;
     }
 }
+
