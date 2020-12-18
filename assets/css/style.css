@@ -1,5 +1,5 @@
 /*--------------------------------Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Dancing+Script:wght@400;700&display=swap');
 
 /*--------------------------------Whole Page */
 
@@ -8,17 +8,13 @@ html{
 }
 
 body{
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa', sans-serif;
 }
 
 /*--------------------------------General Margins */
 
 section{
     margin-top: 20px;
-}
-
-.container-fluid{
-    margin: 20px 0px;
 }
 
 /*--------------------------------Colors */
@@ -33,14 +29,12 @@ header{
 }
 
 #locations-dates{
-    background-color: #d6dee1;
-    background-color: #7092a3;
     background-color: #a2bdc7;
 }
 
 #footer{
     background-color: #06273c;
-    color: #fff;
+    color: #d6dee1;
 }
 
 /*--------------------------------Titles */
@@ -97,14 +91,16 @@ h3{
 
 header{
     box-shadow: 0px 2px grey;
-    background-color: #06273c;
-    color: #d6dee1;
 }
 
 header h1{
     font-family: 'Dancing Script', cursive;
     margin: 0px;
     color: #d6dee1;
+}
+
+nav ul{
+    padding: 0px;
 }
 
 nav li{
@@ -119,7 +115,7 @@ nav li{
 
 #button-menu a{
     background-color: transparent;
-    border:2px solid #d6dee1;
+    border: none;
     color: #d6dee1;
 }
 
@@ -143,7 +139,7 @@ nav button:focus{
     margin-top: 56px;
 }    
 
-/* This section allows the images to cycle automatically */
+/* This section allows the images to cycle automatically, courtesy of Hyde Design (https://www.hyde-design.co.uk/joomla-bites/80-create-a-css-slideshow-no-javascript-required) */
 .slideshow {
     height:0px; 
     padding-bottom: 50%; 
@@ -165,16 +161,15 @@ nav button:focus{
 .slideshow img:nth-child(2){animation-delay:10s;}
 .slideshow img:nth-child(1){animation-delay:15s;}
 
-/*--------------------------------Home */
+/*--------------------------------About us */
 
-#home p{
+#about-us p{
     text-align: justify;
 }
 
 #benefits p{
     text-align: center;
-    border: 5px solid #06273c;
-    border-radius: 1rem;
+    font-weight: 700;
 }
 
 #join-us button{
@@ -217,6 +212,27 @@ nav button:focus{
     border-bottom: none;
 }
 
+/* Allows the images in the activities section to rotate when mouse-hovered, courtesy of Free Frontend (https://freefrontend.com/css-image-effects/) */
+.image-div{
+  perspective: 4000px;
+  position: relative;
+  transform-style: preserve-3d;
+  width: 85%;
+  margin: auto;
+}
+
+.image-div img{
+  transform: rotateX(70deg) rotateZ(-60deg);
+  box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+  transition: all .4s;
+  transform-style: preserve-3d;
+}
+
+.image-div:hover img{
+  transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+}
+
 /*--------------------------------Footer */
 
 #footer h2{
@@ -227,23 +243,10 @@ nav button:focus{
     text-align: center;
 }
 
-.social-links li{
+.social-links a{
     height: 55px;
     width: 55px;
-    border: 2px solid #eaeff0;
-    border-radius: 50%;
-}
 
-.social-links i{
-    width: 25px;
-    height: 25px;
-    padding: 13px 0px;
-    font-size: 25px;
-    color: #fafafa;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
 }
 
 footer p{
@@ -251,32 +254,75 @@ footer p{
     padding-right: 30px;
 }
 
-#telephone-num p{
+#telephone-num{
+    font-size: 20px;
+}
+
+/* Styles the social media icons, courtesy of Code Institute (https://codeinstitute.net/)*/
+.social-links i{
+    width: 25px;
+    height: 25px;
     font-size: 25px;
+    padding-top: 13px;
+    color: #eaeff0;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }
 
 /*-------------------------------- Member Modal */
 
-.modal-header i{
-    color: #d6dee1;
+/* Overrides the element style that pushes the modal off-center */
+#member-modal{
+    padding-right: 0px !important; 
 }
 
 .modal-content{
-    background-color: #06273c;
-    color: #d6dee1;
-    border: 3px solid #d6dee1;
-    border-radius: 1rem;
+    background-color: transparent;
+    border: none;
 }
 
-.modal-footer button{
+#modal-image{
+    padding: 0px;
+}
+
+#modal-image img{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.modal-body{
+    background-color: #06273c;
+    color: #d6dee1;
+    border-radius: 1rem;
+    padding: 0px 16px;
+}
+
+.modal-body button{
     background-color: #d6dee1;
     color: #06273c;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#modal-form{
+    margin-top: 20px;
+}
+
+#modal-thanks button{
+    background-color: #06273c;
+    color: #d6dee1;
+}
+
+#modal-thanks p{
+    margin-top: 1rem;
 }
 
 /*--------------------------------Media queries */
 
-/* Allows the burger menu to only appear on smaller devices, and only shows the button menu on larger ones */
 @media screen and (max-width: 992px) {
+    /* Allows the burger menu to only appear on smaller devices, and only shows the button menu on larger ones */
     #button-menu{
         display:none;
     }
@@ -285,6 +331,7 @@ footer p{
         display:block;
     }
 
+    /* Makes it so the separators only appear in between columns */
     .single-location{
         border-right: none;
     }
@@ -297,8 +344,10 @@ footer p{
         border-bottom: none;
     }
 
-    #benefits-section label{
-        font-size: 50%;
+    /* Curves the required corners of the image depending on the device's size */
+    #modal-image img{
+        border-top-right-radius: 1rem;
+        border-bottom-left-radius: 0rem;
     }
 }
 
