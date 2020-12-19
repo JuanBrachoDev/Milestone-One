@@ -93,6 +93,11 @@ header{
     box-shadow: 0px 2px grey;
 }
 
+.navbar-brand i{
+    color: #d6dee1;
+    padding-right: 3px;
+}
+
 header h1{
     font-family: 'Dancing Script', cursive;
     margin: 0px;
@@ -224,38 +229,37 @@ nav button:focus{
 .image-div img{
   transform: rotateX(70deg) rotateZ(-60deg);
   box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
-  transition: all .4s;
+  transition: all .2s;
   transform-style: preserve-3d;
 }
 
 .image-div:hover img{
   transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
   box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+  transition: all .4s;
 }
 
 /*--------------------------------Footer */
 
-#footer h2{
-    margin-bottom: 30px;
+footer div{
+    padding-top: 0x;
+    padding-bottom: 0px;
+    text-align: center;
+    vertical-align: middle;
 }
 
-#footer div{
-    text-align: center;
+footer p{
+    margin-top: 17px;
+}
+
+.social-links{
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 .social-links a{
     height: 55px;
     width: 55px;
-
-}
-
-footer p{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-#telephone-num{
-    font-size: 20px;
 }
 
 /* Styles the social media icons, courtesy of Code Institute (https://codeinstitute.net/)*/
