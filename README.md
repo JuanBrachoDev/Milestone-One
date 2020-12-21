@@ -25,6 +25,9 @@
         -   **#a2bdc7** for the background of the "locations-dates" section. 
           
         All of these are part of the ***Artic Winter Color Palette***, and these choices were made taking contrast as the most important factor, and because they complement the snowy, chilly feel that is built around this particular festival.	
+        
+        ![Color palette](/docs/Colors.png)
+
     -   #### Typography
         -   Two main fonts were chosen for this page: 
             -   **"Dancing Script"** for most of the titles with **"Cursive"** as a fallback, this was chosen to represent the fun and entertaining, yet elegant and organized part of the the festival. 
@@ -57,7 +60,7 @@
        Provides the user with dynamic images that draw user engagement without hindering navigation.
 
 -   ### Footer
-       Compacts important information that is easily accessed either by scrolling down, or by clicking the appropiate "Contact Us" button in the navigation bar.
+       Compacts important information like social media links and the copyright disclaimer, that are easily accessed either by scrolling down, or by clicking the appropiate "Contact Us" button in the navigation bar.
 
 ## Technologies Used
 
@@ -145,9 +148,9 @@ The project was deployed to GitHub Pages using the following steps...
 1. Log in to GitHub and locate the [Milestone One GitHub Repository](https://github.com/JuanBrachoDev/Milestone-One)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
+4. Under "Source", click the dropdown called "None" and select "Master".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link](https://juanbrachodev.github.io/Milestone-One/ ) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
@@ -167,14 +170,14 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 6. Type `git clone`, and then paste the URL you copied in Step 3.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone https://github.com/JuanBrachoDev/Milestone-One
 ```
 
 7. Press Enter. Your local clone will be created.
 
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
+$ git clone https://github.com/JuanBrachoDev/Milestone-One
+> Cloning into `Milestone-One`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
 > remove: Total 10 (delta 1), reused 10 (delta 1)
