@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Juan Bracho">
+    <meta name="description"
+        content="The Adventure Begins is the leading winter event, filled with activities and accessible to everyone. Come and join us this year!">
     <!-- Libraries -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>The Adventure Begins</title>
 </head>
+
 <body>
     <!-- Header -->
     <header class="fixed-top">
-        <nav class="navbar align-items-center">    
+        <nav class="navbar align-items-center">
             <!-- Brand Logo & Name -->
             <a class="d-flex" href="#">
                 <h1 class="navbar-brand">The Adventure Begins</h1>
             </a>
             <!-- Button Menu -->
-            <div id="button-menu" class="btn-group" role="group" aria-label="Basic example">
+            <div id="button-menu" class="btn-group" role="group" aria-label="Menu">
                 <a href="#about-us-anchor" class="btn btn-secondary hvr-underline-from-center">About Us</a>
                 <a href="#join-us-anchor" class="btn btn-secondary hvr-underline-from-center">Join Us</a>
-                <a href="#locations-dates-anchor" class="btn btn-secondary hvr-underline-from-center">Locations & Dates</a>
+                <a href="#locations-dates-anchor" class="btn btn-secondary hvr-underline-from-center">Locations &
+                    Dates</a>
                 <a href="#activities-anchor" class="btn btn-secondary hvr-underline-from-center">Activities</a>
                 <a href="#footer" class="btn btn-secondary hvr-underline-from-center">Contact Us</a>
             </div>
             <!-- Burger Menu -->
-            <button id="burger-menu-button" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#drop-menu" aria-haspopup="true" aria-expanded="false">
+            <button id="burger-menu-button" type="button" class="navbar-toggler" data-toggle="collapse"
+                data-target="#drop-menu" aria-haspopup="true" aria-expanded="false" aria-label="Menu">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
             <div id="drop-menu" role="menu" class="collapse" aria-labelledby="drop-menu">
@@ -48,17 +55,17 @@
                     <li data-toggle="collapse" data-target="#drop-menu" class="nav-item col-12">
                         <a class="dropdown-item" href="#footer">Contact Us</a>
                     </li>
-                </ul>    
+                </ul>
             </div>
-        </nav>   
+        </nav>
     </header>
-    <!-- Scrolling Image -->  
+    <!-- Scrolling Image -->
     <section id="scrolling-images" class="container-fluid">
         <div class="row slideshow">
             <img src="assets/images/mug.jpeg" alt="mug filled with snow">
             <img src="assets/images/winter-fun.jpeg" alt="family sitting on snow">
             <img src="assets/images/parade.jpeg" alt="street parade">
-            <img src="assets/images/costumes.jpeg" alt="girls in costumes">       
+            <img src="assets/images/costumes.jpeg" alt="girls in costumes">
         </div>
     </section>
     <!-- About Us Section -->
@@ -68,9 +75,14 @@
             <h2 id="about-us-anchor" class="col">- Who are we? -</h2>
         </div>
         <div class="row">
-            <p class="col-12">We are pleased to announce the 10th The Adventure Begins Winter Festival, brought to you by the expert hands of our dedicated team to bring entertainment and joy to everyone in Dublin.</p>
-            <p class="col-12">Fit for all ages, this event is sure to bring you a warm smile in this chilly season, whether you are in to enjoy the fun activities we have prepared, or would rather join our team of organizers.</p>
-            <p class="col-12">The Adventure Begins team is commited to protect and clean all of its locations, to ensure no pollution derives from human enjoyment and to preserve nature wonders all around the world. We look forward to seeing you in any of the locations!</p>   
+            <p class="col-12">We are pleased to announce the 10th The Adventure Begins Winter Festival, brought to you
+                by the expert hands of our dedicated team to bring entertainment and joy to everyone in Dublin.</p>
+            <p class="col-12">Fit for all ages, this event is sure to bring you a warm smile in this chilly season,
+                whether you are in to enjoy the fun activities we have prepared, or would rather join our team of
+                organizers.</p>
+            <p class="col-12">The Adventure Begins team is commited to protect and clean all of its locations, to ensure
+                no pollution derives from human enjoyment and to preserve nature wonders all around the world. We look
+                forward to seeing you in any of the locations!</p>
         </div>
         <div class="row responsive-image">
             <div class="col-12">
@@ -84,27 +96,28 @@
             <h2 id="join-us-anchor" class="col">- Join us! -</h2>
         </div>
         <div id="benefits" class="row justify-content-center">
-            <div class="col-12 col-lg-4">     
+            <div class="col-12 col-lg-4">
                 <p>Guaranteed parking for all days of the festival.</p>
-            </div> 
-            <div class="col-12 col-lg-4"> 
+            </div>
+            <div class="col-12 col-lg-4">
                 <p>Sell your merchandise. Promote your brand.</p>
-            </div> 
-            <div class="col-12 col-lg-4"> 
+            </div>
+            <div class="col-12 col-lg-4">
                 <p> Priority access to activities for a group of (4). </p>
-            </div> 
+            </div>
         </div>
         <div class="row">
-            <p class="col-12">Get access to all of these benefits by clicking the button below, submit the form and one of the members of our team will contact you shortly.</p>
+            <p class="col-12">Get access to all of these benefits by clicking the button below, submit the form and one
+                of the members of our team will contact you shortly.</p>
         </div>
         <div class="row">
             <div class="col-12 col-lg-6 offset-lg-3 hvr-bounce-in" id="join-us">
-                <button class="btn btn-warning " data-toggle="modal" data-target="#member-modal">
+                <button class="btn btn-warning " data-toggle="modal" data-target="#join-us-modal">
                     Join Us!
                 </button>
             </div>
         </div>
-    </section> 
+    </section>
     <!-- Locations & Dates Section -->
     <section id="locations-dates" class="container">
         <div class="row">
@@ -116,7 +129,9 @@
                 <h3>Cruagh Wood 7/12</h3>
                 <p>Dublin Panoramic View/Dublin View Point, Killakee, Co.Dublin</p>
                 <div class="maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.778371160285!2d-6.322663584026437!3d53.23974909039131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670a93fc96f85b%3A0xef1e1af6a70f5799!2sDublin%20Panoramic%20View%2FDublin%20View%20Point!5e0!3m2!1sen!2sie!4v1607239290142!5m2!1sen!2sie" allowfullscreen="" aria-hidden="false"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.778371160285!2d-6.322663584026437!3d53.23974909039131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670a93fc96f85b%3A0xef1e1af6a70f5799!2sDublin%20Panoramic%20View%2FDublin%20View%20Point!5e0!3m2!1sen!2sie!4v1607239290142!5m2!1sen!2sie"
+                        allowfullscreen="" aria aria-hidden="false" aria-label="Map to Cruagh Wood"></iframe>
                 </div>
             </div>
             <!-- 2nd Location -->
@@ -124,7 +139,9 @@
                 <h3>Swords Castle 14/12</h3>
                 <p>Swords Castle, Bridge St, Townparks, Swords, Co. Dublin</p>
                 <div class="maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.5005546033244!2d-6.22241308402016!3d53.45951377392944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486710efb9d437a9%3A0x9d4370039b81badb!2sSwords%20Castle!5e0!3m2!1sen!2sie!4v1607398116737!5m2!1sen!2sie" allowfullscreen="" aria-hidden="false"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.5005546033244!2d-6.22241308402016!3d53.45951377392944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486710efb9d437a9%3A0x9d4370039b81badb!2sSwords%20Castle!5e0!3m2!1sen!2sie!4v1607398116737!5m2!1sen!2sie"
+                        allowfullscreen="" aria-hidden="false" aria-label="Map to Swords Castle"></iframe>
                 </div>
             </div>
             <!-- 3rd Location -->
@@ -132,11 +149,13 @@
                 <h3>Phoenix Park 21/12</h3>
                 <p>Ashtown Castle Walled Garden, Phoenix Park, Dublin</p>
                 <div class="maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.2915270981953!2d-6.331673362766311!3d53.36432442307463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670d083151e4ef%3A0x429d5a8627da5b7b!2sAshtown%20Castle!5e0!3m2!1sen!2sie!4v1607398455487!5m2!1sen!2sie" allowfullscreen="" aria-hidden="false"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2831.2915270981953!2d-6.331673362766311!3d53.36432442307463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670d083151e4ef%3A0x429d5a8627da5b7b!2sAshtown%20Castle!5e0!3m2!1sen!2sie!4v1607398455487!5m2!1sen!2sie"
+                        allowfullscreen="" aria-hidden="false" aria-label="Map to Phoenix Park"></iframe>
                 </div>
             </div>
         </div>
-    </section>  
+    </section>
     <!-- Activities Section -->
     <section id="activities" class="container">
         <div class="row">
@@ -150,12 +169,14 @@
             <div class="row">
                 <div class="col-lg-6 align-self-center">
                     <p>-This activity is only available on 7/12-</p>
-                    <p>The National Weather Organization of Ireland has forecast visible and bright lights in early December, come and join us in this lovely off-road location and participate in all of the other fun activities while enjoying the starry night sky nature offers.</p>
+                    <p>The National Weather Organization of Ireland has forecast visible and bright lights in early
+                        December, come and join us in this lovely off-road location and participate in all of the other
+                        fun activities while enjoying the starry night sky nature offers.</p>
                 </div>
-                <div class="col-lg-3 responsive-image image-div">    
+                <div class="col-lg-3 responsive-image image-div">
                     <img src="assets/images/aurora1.jpeg" alt="aurora borealis at snowy night" class="img">
                 </div>
-                <div class="col-lg-3 responsive-image d-none d-lg-block image-div">  
+                <div class="col-lg-3 responsive-image d-none d-lg-block image-div">
                     <img src="assets/images/aurora2.jpeg" alt="aurora borealis over forest" class="img">
                 </div>
             </div>
@@ -167,12 +188,14 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 align-self-center">
-                    <p>Come and join us in the Icicle Ballroom, for newbies and experts alike there is fun to be had, featuring classic songs for everyone to enjoy! We provide free skate rental for all attendants.</p>
+                    <p>Come and join us in the Icicle Ballroom, for newbies and experts alike there is fun to be had,
+                        featuring classic songs for everyone to enjoy! We provide free skate rental for all attendants.
+                    </p>
                 </div>
-                <div class="col-lg-3 responsive-image image-div">    
+                <div class="col-lg-3 responsive-image image-div">
                     <img src="assets/images/skating1.jpeg" alt="skating rink" class="img">
                 </div>
-                <div class="col-lg-3 responsive-image d-none d-lg-block image-div">  
+                <div class="col-lg-3 responsive-image d-none d-lg-block image-div">
                     <img src="assets/images/skating2.jpeg" alt="person ice skating" class="img">
                 </div>
             </div>
@@ -184,17 +207,18 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 align-self-center image-div">
-                    <p>Feeling peckish? We have a selection of worldwide treats for any foodies out there, enjoy your favourite food with your favourite people!</p>
+                    <p>Feeling peckish? We have a selection of worldwide treats for any foodies out there, enjoy your
+                        favourite food with your favourite people!</p>
                 </div>
-                <div class="col-lg-3 responsive-image image-div">    
+                <div class="col-lg-3 responsive-image image-div">
                     <img src="assets/images/food1.jpeg" alt="food stand preparing food" class="img">
                 </div>
-                <div class="col-lg-3 responsive-image d-none d-lg-block image-div">  
+                <div class="col-lg-3 responsive-image d-none d-lg-block image-div">
                     <img src="assets/images/food2.jpeg" alt="prepared shrimp dishes" class="img">
                 </div>
             </div>
         </div>
-    </section>     
+    </section>
     <!-- Contact Us -->
     <footer id="footer" class="container-fluid">
         <div class="row">
@@ -227,8 +251,9 @@
             </div>
         </div>
     </footer>
-    <!-- Member Modal -->
-    <div class="modal fade" id="member-modal" tabindex="-1" role="dialog" aria-labelledby="member-modal" aria-hidden="true">
+    <!-- Join Us Modal -->
+    <div class="modal fade" id="join-us-modal" tabindex="-1" role="dialog" aria-labelledby="join-us-modal"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-body container-fluid">
@@ -242,21 +267,26 @@
                             <form method="POST" action="https://formdump.codeinstitute.net">
                                 <div class="form-group">
                                     <label for="first-name" class=" col-form-label">First Name:</label>
-                                    <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+                                    <input type="text" class="form-control" id="first-name" placeholder="First Name"
+                                        required>
                                 </div>
                                 <div class="form-group">
                                     <label for="last-name" class="col-form-label">Last Name:</label>
-                                    <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
+                                    <input type="text" class="form-control" id="last-name" placeholder="Last Name"
+                                        required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email-address" class="col-form-label">Email:</label>
-                                    <input type="email" class="form-control" id="email-address" placeholder="Email Address" required>
+                                    <input type="email" class="form-control" id="email-address"
+                                        placeholder="Email Address" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="telephone-number" class="col-form-label">Telephone number:</label>
-                                    <input type="tel" class="form-control" id="telephone-number" placeholder="+353870000000" required>
+                                    <input type="tel" class="form-control" id="telephone-number"
+                                        placeholder="+353870000000" required>
                                 </div>
-                                <button type="submit" class="btn hvr-fade" data-toggle="modal" data-target="#after-modal" data-dismiss="modal">Submit</button>
+                                <button type="submit" class="btn hvr-fade" data-toggle="modal"
+                                    data-target="#acknowledge-modal" data-dismiss="modal">Submit</button>
                                 <button type="button" class="btn hvr-fade" data-dismiss="modal">Close</button>
                             </form>
                         </div>
@@ -265,24 +295,32 @@
             </div>
         </div>
     </div>
-    <!-- After Modal -->
-    <div class="modal fade" id="after-modal" tabindex="-1" role="dialog" aria-labelledby="after-modal" aria-hidden="true">
+    <!-- Acknowledge Modal -->
+    <div class="modal fade" id="acknowledge-modal" tabindex="-1" role="dialog" aria-labelledby="acknowledge-modal"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">    
-                <div id="modal-thanks" class="modal-body container">
+            <div class="modal-content">
+                <div id="modal-message" class="modal-body container">
                     <div class="row">
-                        <p class="col-10">A member of our team will contact you shortly, you may close this window.</p> 
+                        <p class="col-10">A member of our team will contact you shortly, you may close this window.</p>
                         <button type="button" class="close col-2" data-dismiss="modal" aria-label="Close">
                             <i class="fa fa-window-close"></i>
                         </button>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>                
+    </div>
     <!-- External libraries -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

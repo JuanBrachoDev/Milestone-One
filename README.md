@@ -1,5 +1,7 @@
 # Milestone Project 1
 
+![Color palette](/docs/Am-i-responsive.png)
+
 ## User Experience (UX)
 
 ---
@@ -93,6 +95,8 @@
     - GitHub is used to store the projects code after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [Mobile](https://github.com/JuanBrachoDev/Milestone-One/blob/master/docs/Mobile.png) and [Desktop](https://github.com/JuanBrachoDev/Milestone-One/blob/master/docs/Desktop.png) wireframes during the design process.
+1. [Am I responsive:](http://ami.responsivedesign.is/)
+    - Used to efficiently test different resposive layouts and provide the header image for the readme file.
 
 ## Testing
 
@@ -101,7 +105,8 @@
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/JuanBrachoDev/Milestone-One/blob/master/docs/HTML-validation.png)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/JuanBrachoDev/Milestone-One/blob/master/docs/CSS-validation.png)
+-   [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) - [Results](https://github.com/JuanBrachoDev/Milestone-One/blob/master/docs/Lighthouse-results.png)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -114,7 +119,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         > The user can either scroll to the **locations-dates** and **activities** sections, or find the respective buttons in the navigation bar, with the addition of the fixed header, this functionality is available at any point in the navigation of the page.
     
     - Be able to sign up as a member.
-        > The user is able to access the join us section and click the join us button to open a modal with a form, by filling and submitting it one of the organizators will get in touch and complete the member sign-up.
+        > The user is able to access the **join-us** section and click the join us button to open a modal with a form, by filling and submitting it one of the organizators will get in touch and complete the member sign-up.
     
 
 -   #### As a member I need to:
@@ -156,13 +161,13 @@ The project was deployed to GitHub Pages using the following steps...
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/JuanBrachoDev/Milestone-One)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/JuanBrachoDev/Milestone-One)
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
@@ -195,7 +200,6 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 -   [Hover.css](https://ianlunn.github.io/Hover/): For the hover effects applied to buttons throughout the page.
 -   [Hyde-Design](https://www.hyde-design.co.uk/joomla-bites/80-create-a-css-slideshow-no-javascript-required): For the carousel slideshow at the start of the page.
--   [Colorlib](https://colorlib.com/etc/regform/colorlib-regform-3/): Inspiration for the member modal's layout.
 -   [Free Frontend](https://freefrontend.com/css-image-effects/): For the rotating images effect in the **activities** section.
 -   [Code Institute](https://codeinstitute.net/): For the code used in the social media links in the **footer**.
 -   [Stack Overflow](https://stackoverflow.com/): As a general point of reference.
@@ -204,6 +208,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Content
 
 -   [Saint Paul Winter Festival](https://www.wintercarnival.com/) Inspiration for the webpage's theme and layout.
+-   [Colorlib](https://colorlib.com/etc/regform/colorlib-regform-3/): Inspiration for the member modal's layout.
 
 ### Media
 

@@ -142,25 +142,25 @@ nav button:focus{
 
 /* This section allows the images to cycle automatically, courtesy of Hyde Design (https://www.hyde-design.co.uk/joomla-bites/80-create-a-css-slideshow-no-javascript-required) */
 .slideshow {
-    height:0px; 
+    height: 0px; 
     padding-bottom: 50%; 
-    overflow:hidden; 
-    position:relative; 
+    overflow: hidden; 
+    position: relative; 
 }
 
 .slideshow img{ 
-    position:absolute; 
-    animation:fling-minislide 20s infinite; 
-    opacity:0; 
+    position: absolute; 
+    animation: fling-minislide 20s infinite; 
+    opacity: 0; 
     width: 100%;
     height: auto;
 }
 
-@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
-.slideshow img:nth-child(4){animation-delay:0s;}
-.slideshow img:nth-child(3){animation-delay:5s;}
-.slideshow img:nth-child(2){animation-delay:10s;}
-.slideshow img:nth-child(1){animation-delay:15s;}
+@keyframes fling-minislide {25%{opacity: 1;} 40%{opacity: 0;}}
+.slideshow img:nth-child(4){animation-delay: 0s;}
+.slideshow img:nth-child(3){animation-delay :5s;}
+.slideshow img:nth-child(2){animation-delay: 10s;}
+.slideshow img:nth-child(1){animation-delay: 15s;}
 
 /*--------------------------------About us */
 
@@ -238,7 +238,7 @@ nav button:focus{
 /*--------------------------------Footer */
 
 footer div{
-    padding-top: 0x;
+    padding-top: 0px;
     padding-bottom: 0px;
     text-align: center;
     vertical-align: middle;
@@ -273,8 +273,8 @@ footer p{
 
 /*-------------------------------- Member Modal */
 
-/* Overrides the element style that pushes the modal off-center */
-#member-modal{
+/* Bootstrap uses inline styling to add 17px to right padding, only recurring to !important as the last resort to override it without using any jQuery or modifying the library */
+#join-us-modal{
     padding-right: 0px !important; 
 }
 
@@ -310,12 +310,12 @@ footer p{
     margin-top: 20px;
 }
 
-#modal-thanks button{
+#modal-message button{
     background-color: #06273c;
     color: #d6dee1;
 }
 
-#modal-thanks p{
+#modal-message p{
     margin-top: 1rem;
 }
 
