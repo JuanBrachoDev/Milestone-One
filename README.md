@@ -1,4 +1,4 @@
-# Milestone Project 1
+# The Adventure Begins
 
 ![Color palette](/docs/Am-i-responsive.png)
 
