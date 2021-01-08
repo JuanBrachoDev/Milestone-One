@@ -1,4 +1,5 @@
 /*--------------------------------Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Dancing+Script:wght@400;700&display=swap');
 
 /*--------------------------------Whole Page */
@@ -125,13 +126,13 @@ nav li{
     text-align: center;
 }
 
+nav button:focus{
+    outline: none;
+}
+
 /* Will help alongside media queries to show the burger button on small devices, and the button menu on larger ones */
 #burger-menu-button{
     display:none; 
-}
-
-nav button:focus{
-    outline: none;
 }
 
 /*--------------------------------Scrolling Image */
@@ -272,11 +273,6 @@ footer p{
 }
 
 /*-------------------------------- Member Modal */
-
-/* Bootstrap uses inline styling to add 17px to right padding, only recurring to !important as the last resort to override it without using any jQuery or modifying the library */
-#join-us-modal{
-    padding-right: 0px !important; 
-}
 
 .modal-content{
     background-color: transparent;

@@ -19,7 +19,7 @@
 <body>
     <!-- Header -->
     <header class="fixed-top">
-        <nav class="navbar align-items-center">
+        <nav class="navbar">
             <!-- Brand Logo & Name -->
             <a class="d-flex" href="#">
                 <h1 class="navbar-brand">The Adventure Begins</h1>
@@ -111,7 +111,7 @@
                 of the members of our team will contact you shortly.</p>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-6 offset-lg-3 hvr-bounce-in" id="join-us">
+            <div class="col-12 col-lg-6 offset-lg-3 hvr-pulse-shrink" id="join-us">
                 <button class="btn btn-warning " data-toggle="modal" data-target="#join-us-modal">
                     Join Us!
                 </button>
@@ -131,7 +131,7 @@
                 <div class="maps">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2387.778371160285!2d-6.322663584026437!3d53.23974909039131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670a93fc96f85b%3A0xef1e1af6a70f5799!2sDublin%20Panoramic%20View%2FDublin%20View%20Point!5e0!3m2!1sen!2sie!4v1607239290142!5m2!1sen!2sie"
-                        allowfullscreen="" aria aria-hidden="false" aria-label="Map to Cruagh Wood"></iframe>
+                        allowfullscreen="" aria-hidden="false" aria-label="Map to Cruagh Wood"></iframe>
                 </div>
             </div>
             <!-- 2nd Location -->
@@ -267,22 +267,22 @@
                             <form method="POST" action="https://formdump.codeinstitute.net">
                                 <div class="form-group">
                                     <label for="first-name" class=" col-form-label">First Name:</label>
-                                    <input type="text" class="form-control" id="first-name" placeholder="First Name"
+                                    <input type="text" class="form-control" id="first-name" name="first-name" placeholder="First Name"
                                         required>
                                 </div>
                                 <div class="form-group">
                                     <label for="last-name" class="col-form-label">Last Name:</label>
-                                    <input type="text" class="form-control" id="last-name" placeholder="Last Name"
+                                    <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last Name"
                                         required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email-address" class="col-form-label">Email:</label>
-                                    <input type="email" class="form-control" id="email-address"
+                                    <input type="email" class="form-control" id="email-address" name="email-address"
                                         placeholder="Email Address" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="telephone-number" class="col-form-label">Telephone number:</label>
-                                    <input type="tel" class="form-control" id="telephone-number"
+                                    <input type="tel" class="form-control" id="telephone-number" name="telephone-number"
                                         placeholder="+353870000000" required>
                                 </div>
                                 <button type="submit" class="btn hvr-fade" data-toggle="modal"

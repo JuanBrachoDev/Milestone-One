@@ -19,7 +19,7 @@
         - Have a list of all events and locations so I can plan my business accordingly.
 
 -   ### Design
-    -   #### Colour Scheme
+    -   #### Color Scheme
         The main colors used throughout the page are: 
         -   **#eaeff0** for the background of the page. 
         -   **#06273c** for the header, the footer and modal bodies. 
@@ -32,7 +32,7 @@
 
     -   #### Typography
         -   Two main fonts were chosen for this page: 
-            -   **"Dancing Script"** for most of the titles with **"Cursive"** as a fallback, this was chosen to represent the fun and entertaining, yet elegant and organized part of the the festival. 
+            -   **"Dancing Script"** for most of the titles with **"Cursive"** as a fallback, this was chosen to represent the fun and entertaining, yet elegant and organized part of the festival. 
             -   **"Comfortaa"** for the rest of the text, with **"sans-serif"** as fallback, this gives the page a stylish feel while remaining legible enough.
     -   #### Imagery
         -   A carousel below the header was chosen to highlight some of the attractive elements of the festival as soon as the user loads the page.
@@ -62,7 +62,7 @@
        Provides the user with dynamic images that draw user engagement without hindering navigation.
 
 -   ### Footer
-       Compacts important information like social media links and the copyright disclaimer, that are easily accessed either by scrolling down, or by clicking the appropiate "Contact Us" button in the navigation bar.
+       Compacts important information like social media links and the copyright disclaimer, that are easily accessed either by scrolling down, or by clicking the appropriate "Contact Us" button in the navigation bar.
 
 ## Technologies Used
 
@@ -88,15 +88,17 @@
 1. [Font Awesome:](https://fontawesome.com/)
     - Font Awesome was used in the footer to add recognizable social media icons for aesthetic and UX purposes.
 1. [jQuery:](https://jquery.com/)
-    - jQuery came with Bootstrap to make the page responsive but was also used for the smooth scroll function in JavaScript.
+    - jQuery came with Bootstrap to make the page responsive, but was also used for the smooth scroll function in JavaScript.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git.
+    - GitHub is used to store the project's code after being pushed from Git.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [Mobile](https://github.com/JuanBrachoDev/Milestone-One/blob/master/docs/Mobile.png) and [Desktop](https://github.com/JuanBrachoDev/Milestone-One/blob/master/docs/Desktop.png) wireframes during the design process.
 1. [Am I responsive:](http://ami.responsivedesign.is/)
-    - Used to efficiently test different resposive layouts and provide the header image for the readme file.
+    - Used to efficiently test different responsive layouts and provide the header image in the readme file.
+1. [Dillinger:](http://dillinger.io/)
+    - Markdown editor used to create the readme file.
 
 ## Testing
 
@@ -104,7 +106,7 @@
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/JuanBrachoDev/Milestone-One/blob/master/docs/HTML-validation.png)
+-   [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - [Results](https://github.com/JuanBrachoDev/Milestone-One/blob/master/docs/HTML-validation.png)
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/JuanBrachoDev/Milestone-One/blob/master/docs/CSS-validation.png)
 -   [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) - [Results](https://github.com/JuanBrachoDev/Milestone-One/blob/master/docs/Lighthouse-results.png)
 
@@ -119,7 +121,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         > The user can either scroll to the **locations-dates** and **activities** sections, or find the respective buttons in the navigation bar, with the addition of the fixed header, this functionality is available at any point in the navigation of the page.
     
     - Be able to sign up as a member.
-        > The user is able to access the **join-us** section and click the join us button to open a modal with a form, by filling and submitting it one of the organizators will get in touch and complete the member sign-up.
+        > The user is able to access the **join-us** section and click the join us button to open a modal with a form, by filling and submitting it one of the organisers will get in touch and complete the member sign-up.
     
 
 -   #### As a member I need to:
@@ -130,17 +132,29 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Further Testing
 
 -   The Website was tested on Google Chrome, Microsoft Edge and Mozilla Firefox browsers.
--   The website was viewed on a variety of devices such as Desktop, MacBook Pro, Samsung J7, Samsung Galaxy S20+.
+-   The Website was viewed on a variety of devices such as Desktop, MacBook Pro, Samsung J7, Samsung Galaxy S20+.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
+### Fixed Bugs
+
+-   The footer didn't stretch horizontally to fit the entire viewport, and clipped 20px short to the right side.
+       > I had added some margin and padding to the **.container-fluid** class to make it fit the page's layout at first, removing those properties restored Bootstrap's normal behaviour and fixed the issue.
+
+-   The burger menu button shifted around in place when clicked, instead of simply deploying the menu underneath while maintaining its position. 
+       > I had added some margin and padding to the **.nav** class to make it fit the page's layout at first, removing those properties restored Bootstrap's normal behaviour and fixed the issue.
+
+-   The image slideshow **#scrolling-images** on top of the page was cropped below the navbar.
+       > Padding equal to the navbar's height was added to offset the slideshow from the navbar and show it completely. 
+
+-   The modal loads zoomed-in on mobile devices.
+       > The issue was with the Hover.css animation previously used for the join us button (Bounce In), it caused the button to grow beyond the viewport on mobile devices and made the opening modal look like it was zoomed in, this was fixed by replacing the animation with Pulse Shrink which prevents the button from expanding beyond its original size.
 
 ### Known Bugs
 
--   The modal loads zoomed-in on mobile devices.
--   The image in the modal is a couple pixels short of the modal's background, so it shows a bit of it around it instead of covering it completely
+-   The image in the **join-us-modal** is a couple pixels short of the modal's background, so it shows a bit of it around it instead of covering it completely
 -   The Join Us button's mouseover effect doesn't work on the bottom half of the button.
--   The button that submits the modal and shows the thank you message isn't able to load the next modal and submit the form at the same time without extra JavaScript code, feature in development.
+-   The button that submits the modal and shows the thank you message isn't able to load the next modal and submit the form at the same time without extra JavaScript code, it was left so it triggers the **acknowledge-modal** and closes the **join-us-modal**. To verify that the form submits the data correctly, simply remove the **data-target="#acknowledge-modal"** & **data-dismiss="modal"** attributes from the submit button within **#modal-form**. Feature in development.
 
 ## Deployment
 
@@ -197,10 +211,11 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
--   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
+-   [Bootstrap4](https://getbootstrap.com/docs/4.4/getting-started/introduction/): Bootstrap Library used throughout the project mainly to make the site responsive using the Bootstrap Grid System.
+-   [Markdown Guide](https://www.markdownguide.org/): As a guide to create the readme file.
 -   [Hover.css](https://ianlunn.github.io/Hover/): For the hover effects applied to buttons throughout the page.
 -   [Hyde-Design](https://www.hyde-design.co.uk/joomla-bites/80-create-a-css-slideshow-no-javascript-required): For the carousel slideshow at the start of the page.
--   [Free Frontend](https://freefrontend.com/css-image-effects/): For the rotating images effect in the **activities** section.
+-   [Free Frontend](https://freefrontend.com/css-image-effects/): For the rotating image effect in the **activities** section.
 -   [Code Institute](https://codeinstitute.net/): For the code used in the social media links in the **footer**.
 -   [Stack Overflow](https://stackoverflow.com/): As a general point of reference.
 -   [W3Schools](https://www.w3schools.com/): As a general point of reference.
